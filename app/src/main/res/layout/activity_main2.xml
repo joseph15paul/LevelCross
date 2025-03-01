@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity2">
+
+     <View
+         android:layout_width="10dp"
+         android:id="@+id/main2"
+         android:layout_height="10dp"
+         android:background="@drawable/main"
+         android:layout_marginLeft="100dp"
+         android:layout_marginTop="100dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#271637"
+        android:id="@+id/main1"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/innerring"
+        app:layout_constraintTop_toBottomOf="@id/main2"
+        app:layout_constraintBottom_toBottomOf="@id/main1"
+        app:layout_constraintStart_toEndOf="@id/main2"
+        app:layout_constraintEnd_toEndOf="@id/main1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"
+        />
+    <View
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/circlelive"
+        app:layout_constraintTop_toBottomOf="@id/main2"
+        app:layout_constraintBottom_toBottomOf="@id/main1"
+        app:layout_constraintStart_toEndOf="@id/main2"
+        app:layout_constraintEnd_toEndOf="@id/main1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"  />
+    <!--        tools:l87ayout_editor_absoluteX="35dp"-->
+    <!--        tools:layout_editor_absoluteY="240dp"-->
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:format12Hour="hh:mm:ss a"
+        android:format24Hour="HH:mm:ss"
+        app:layout_constraintTop_toBottomOf="@id/main2"
+        app:layout_constraintBottom_toBottomOf="@id/main1"
+        app:layout_constraintStart_toEndOf="@id/main2"
+        app:layout_constraintEnd_toEndOf="@id/main1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.16"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/openclose"
+        android:paddingTop="10dp"
+        android:text="OPEN"
+        android:textAlignment="center"
+        android:textColor="#271637"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/main2"
+        app:layout_constraintBottom_toBottomOf="@id/main1"
+        app:layout_constraintStart_toEndOf="@id/main2"
+        app:layout_constraintEnd_toEndOf="@id/main1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/openclose1"
+        android:paddingTop="10dp"
+        android:text="CLOSED"
+        android:textAlignment="center"
+        android:textColor="#271637"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/main2"
+        app:layout_constraintBottom_toBottomOf="@id/main1"
+        app:layout_constraintStart_toEndOf="@id/main2"
+        app:layout_constraintEnd_toEndOf="@id/main1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/openclose2"
+        android:paddingTop="10dp"
+        android:text="SHUNTING"
+        android:textAlignment="center"
+        android:textColor="#271637"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/main2"
+        app:layout_constraintBottom_toBottomOf="@id/main1"
+        app:layout_constraintStart_toEndOf="@id/main2"
+        app:layout_constraintEnd_toEndOf="@id/main1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.45" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/more_button"
+        android:background="@drawable/morebg"
+        app:layout_constraintTop_toBottomOf="@id/main2"
+        app:layout_constraintBottom_toBottomOf="@id/main1"
+        app:layout_constraintStart_toEndOf="@id/main2"
+        app:layout_constraintEnd_toEndOf="@id/main1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.7"
+        android:text="MORE"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
