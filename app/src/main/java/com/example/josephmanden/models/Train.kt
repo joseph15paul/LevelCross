@@ -23,5 +23,6 @@ data class Train(
     val destination: String,
 
     @SerializedName("DepartureTime")
-    val departureTime: String
+    @JsonAdapter(LocalTimeAdapter::class)
+    val departureTime: LocalTime
 )
