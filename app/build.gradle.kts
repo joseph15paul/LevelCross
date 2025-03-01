@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.josephmanden"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -34,10 +34,12 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    dataBinding.enable = true
 }
 
 dependencies {

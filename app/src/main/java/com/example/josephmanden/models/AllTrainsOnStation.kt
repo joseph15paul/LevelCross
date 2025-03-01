@@ -1,3 +1,13 @@
 package com.example.josephmanden.models
 
-data class AllTrainsOnStation(val responseCode: String, val status: String, val trains: List<Train>)
+import com.google.gson.annotations.SerializedName
+
+data class AllTrainsOnStation(
+    @SerializedName("ResponseCode")
+    val responseCode: String,
+
+    @SerializedName("Status")
+    val status: String,
+
+    @SerializedName("Trains")
+    val trains: List<Train>)
